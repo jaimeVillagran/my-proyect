@@ -1,0 +1,71 @@
+.Form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+}
+
+label,
+input[type="text"],
+input[type="number"] {
+	margin-bottom: 0.1rem;
+	display: block;
+	width: 200px;
+	height: 35px;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+button[type="submit"] {
+	margin-top: 20px;
+	width: 100px;
+	height: 40px;
+	align: center;
+	background-color: lightgray;
+	border-radius: 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	margin-top: 20px;
+	background-color: #912a62;
+	color: white;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 5px;
+}
+
+li {
+	width: 125px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	padding: 10px;
+	background-color: lightgray;
+	border-radius: 10px;
+}
+
+button {
+	width: 80px;
+	height: 30px;
+	margin: 10px;
+	background-color: white;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #912a62;
+	color: white;
+}

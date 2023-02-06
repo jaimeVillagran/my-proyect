@@ -1,0 +1,15 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #084d6e;
+	display: block;
+}
+
+.App {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #2b8b91;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(49, 6, 243, 0.1);
+}

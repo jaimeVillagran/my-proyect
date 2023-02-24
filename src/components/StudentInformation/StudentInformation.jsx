@@ -1,27 +1,27 @@
 import React from "react";
 import { University } from "../data";
-import "./StudentInformation.css";
+import s from "./styles.module.css";
 
 const InfoStudents = () => {
 	const students = University[0].students;
 
 	return (
 		<div>
-			<h1>{University[0].name}</h1>
-			<div className="container">
+			<h1 className={s.titlePrimary}>{University[0].name}</h1>
+			<div className={s.container}>
 				{students.map((student) => (
-					<div key={student.name} className="card">
-						<h2>{student.name}</h2>
-						<p>Title: {student.title}</p>
-						<p>
-							Evaluations:{" "}
-							{student.evaluations.map((evaluation, index) => {
-								return index === student.evaluations.length - 1
-									? evaluation
-									: evaluation + ", ";
-							})}
-						</p>
-						<p>Duration: {student.duration} years</p>
+					<div key={student.id} className={s.card}>
+						<h2 className={s.titleSecondary}>{student.name}</h2>
+						<p className={s.paragraph}>Title: {student.title}</p>
+						<span className={s.inline}> Evaluations:</span>
+						{student.evaluations.map((evaluation, index) => {
+							return index === student.evaluations.length - 1 ? (
+								<span className={s.inline}> {evaluation} </span>
+							) : (
+								<span className={s.inline}> {evaluation + " , "}</span>
+							);
+						})}
+						<p className={s.paragraph}>Duration: {student.duration} years</p>
 					</div>
 				))}
 			</div>

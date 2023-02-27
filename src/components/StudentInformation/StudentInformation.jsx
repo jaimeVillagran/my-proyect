@@ -1,6 +1,6 @@
 import React from "react";
 import { University } from "../data";
-import s from "./styles.module.css";
+import s from "./style.module.css";
 
 const InfoStudents = () => {
 	const students = University[0].students;
@@ -15,7 +15,7 @@ const InfoStudents = () => {
 						<p className={s.paragraph}>Title: {student.title}</p>
 						<span className={s.inline}> Evaluations:</span>
 						{student.evaluations.filter((evaluation) => {
-							return index === student.evaluations.length - 1 ? (
+							return student.id === student.evaluations.length - 1 ? (
 								<span className={s.inline}> {evaluation} </span>
 							) : (
 								<span className={s.inline}> {evaluation + " , "}</span>

@@ -1,6 +1,6 @@
 import React from "react";
 import { University } from "../data";
-import s from "./styles.module.css";
+import s from "./style.module.css";
 
 const StudentList = () => {
 	const students = University[0].students;

@@ -1,16 +1,18 @@
 import React from "react";
 import { University } from "../data";
-import "./StudentList.css";
+import s from "./style.module.css";
 
 const StudentList = () => {
 	const students = University[0].students;
 
 	return (
 		<div>
-			<ul className="student-list">
-				<h2>List Stundent</h2>
+			<ul className={s.studentList}>
+				<h2 className={s.secondaryHeader}>List Stundent</h2>
 				{students.map((student) => (
-					<li key={student.name}>{student.name}</li>
+					<li className={s.itemList} key={student.name}>
+						{student.name}
+					</li>
 				))}
 			</ul>
 		</div>

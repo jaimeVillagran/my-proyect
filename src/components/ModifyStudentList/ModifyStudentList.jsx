@@ -28,8 +28,8 @@ const AddDeleteStudents = () => {
 
 	return (
 		<div>
-			<dir class="Form">
-				<h2> Formulario Student New </h2>
+			<dir className="Form">
+				<h2> Form Student New </h2>
 				<form onSubmit={handleSubmit}>
 					<label htmlFor="name">Name:</label>
 					<input

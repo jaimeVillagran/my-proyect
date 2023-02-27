@@ -14,7 +14,7 @@ const InfoStudents = () => {
 						<h2 className={s.titleSecondary}>{student.name}</h2>
 						<p className={s.paragraph}>Title: {student.title}</p>
 						<span className={s.inline}> Evaluations:</span>
-						{student.evaluations.map((evaluation, index) => {
+						{student.evaluations.filter((evaluation) => {
 							return index === student.evaluations.length - 1 ? (
 								<span className={s.inline}> {evaluation} </span>
 							) : (
